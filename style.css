@@ -51,6 +51,52 @@ button {
     justify-content: center; 
    
 }
+#banner {
+  background-color: #74ef74;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+#fireworks {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.firework {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: firework 10s linear infinite;
+}
+
+@keyframes firework {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  80% {
+    transform: translateY(-200vh) scale(1);
+  }
+  100% {
+    transform: translateY(-200vh) scale(0);
+  }
+}
+
+
 @media (max-width: 480px) {
     form {
       flex-direction: column;
