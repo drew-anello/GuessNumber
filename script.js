@@ -2,6 +2,7 @@ const btn = document.getElementById('btn')
 const inp = document.getElementById('inp')
 const number = Math.floor(Math.random() * 101) + 1
 const ul = document.querySelector('ul')
+let resetBtn = null
 
 btn.addEventListener('click', function (e) {
   e.preventDefault()
@@ -23,4 +24,5 @@ btn.addEventListener('click', function (e) {
     li.textContent = `Try Again. Your guess was: ${inp.value}`
     ul.appendChild(li)
   }
+  inp.value = ''
 })
