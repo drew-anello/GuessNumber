@@ -1,0 +1,21 @@
+@font-face {
+    font-family: retro-game;
+    src: url(./fonts/zrnic\ rg.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(76, 73, 73);
+    color: aliceblue;
+}
+h1 {
+    font-family: retro-game;
+    display: flex;
+    margin-top: 6vh;
+    font-size: 8vh;
+    justify-content: center;
+}
