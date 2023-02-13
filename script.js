@@ -20,6 +20,7 @@ btn.addEventListener('click', function (e) {
       document.getElementById('fireworks').appendChild(firework)
     }
   } else {
-    console.log('try again')
+    li.textContent = `Try Again. Your guess was: ${inp.value}`
+    ul.appendChild(li)
   }
 })
